@@ -1,0 +1,42 @@
+class Figura:
+    name = ""
+    kind = "figura"
+    color = ""
+    def description(self):
+        desc_str = "%s to %s %s o polu %s" % (self.name, self.color, self.kind, self.pole)
+        return desc_str
+
+
+prostokat = Figura()
+prostokat.color = "niebieska"
+prostokat.name = "prostokąt"
+x = 5
+y = 8
+prostokat.pole = x*y
+
+print(prostokat.description())
+
+trojkat = Figura()
+trojkat.color = "zielona"
+trojkat.name = "trójkąt prostokątny"
+x = 6
+y = 12
+trojkat.pole = (x/2)*y
+print(trojkat.description())
+
+romb = Figura()
+romb.color = "czerwona"
+romb.name = "romb"
+x = 4
+y = 7
+romb.pole = x*y
+print(romb.description())
+
+trapez = Figura()
+trapez.color = "czarna"
+trapez.name = "trapez"
+h = 10
+x = 15
+y = 7
+trapez.pole = ((x+y)/2)*h
+print(trapez.description())
